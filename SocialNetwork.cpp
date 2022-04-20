@@ -1,13 +1,9 @@
-
 #include <iostream>
 #include <cctype>
 #include <string>
 using std::string;
 
-struct Post
-{
-    string username, message;
-};
+struct Post { string username, message; };
 
 class Profile
 {
@@ -22,7 +18,7 @@ public:
     string getUsername() const { return username; }
 
     string getFullName() const { return fullDisplay; }
-   
+
     void setDisplayName(const string& dspn) { displayname = dspn; }
 };
 
